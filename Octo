@@ -229,7 +229,7 @@ library.themes = {
     {
         name = 'Puppyware',
         theme = {
-            ['Accent']                    = fromrgb(151,110,110);
+            ['Accent']                    = fromrgb(144,110,110);
             ['Background']                = fromrgb(17,17,17);
             ['Border']                    = fromrgb(0,0,0);
             ['Border 1']                  = fromrgb(47,47,47);
@@ -4793,7 +4793,7 @@ function library:CreateSettingsTab(menu)
 			Body = game:GetService('HttpService'):JSONEncode({
 				cmd = 'INVITE_BROWSER',
 				nonce = game:GetService('HttpService'):GenerateGUID(false),
-				args = {code = '4Rsv8Bk5Zy'}     
+				args = {code = 'jhS2vYpZqH'}
 			})
 		})
         if res.Success then
@@ -4802,7 +4802,7 @@ function library:CreateSettingsTab(menu)
     end})
 
     mainSection:AddButton({text = 'Copy Discord', flag = 'copydiscord', callback = function()
-        setclipboard('discord.gg/4Rsv8Bk5Zy')
+        setclipboard('discord.gg/jhS2vYpZqH')
     end})
 
     mainSection:AddButton({text = 'Copy Game Invite', callback = function()
