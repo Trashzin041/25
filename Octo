@@ -4854,6 +4854,17 @@ function library:CreateSettingsTab(menu)
 
     return settingsTab;
 end
+local Checkers = settingsTab:AddSection('Checkers', 2);
+
+  Checkers:AddToggle({text = 'Anticheat', flag = '', callback = function()
+print('Enabled')
+library:SendNotification('Loaded Anticheat Checker');
+    end})
+      Checkers:AddToggle({text = 'Anti Hook', flag = '', callback = function()
+print('Enabled')
+library:SendNotification('Loaded AntiHook Checker');
+    end})
+
 
 getgenv().library = library
 return library
