@@ -229,7 +229,7 @@ library.themes = {
     {
         name = 'Puppyware',
         theme = {
-            ['Accent']                    = fromrgb(144,110,110);
+            ['Accent']                    = fromrgb(151,110,110);
             ['Background']                = fromrgb(17,17,17);
             ['Border']                    = fromrgb(0,0,0);
             ['Border 1']                  = fromrgb(47,47,47);
